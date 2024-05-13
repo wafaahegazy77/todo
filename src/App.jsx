@@ -1,6 +1,5 @@
 import React from "react"
 import ToDOListContainer from "./components/toDoListContainer/ToDOListContainer"
-import './App.scss'
 
 function App() {
 
