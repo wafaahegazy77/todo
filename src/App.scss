@@ -1,0 +1,109 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1d1d1d;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: 100vh;
+}
+
+.container ,
+#root {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container  {
+    padding: 70px 2vw;
+}
+
+.toDo_container {
+    padding: 50px 3vw ;
+    background-color: #fff;
+    border-radius: 25px;
+    width: 50%;
+    margin-bottom: 35px;
+    .title{
+        margin-bottom: 1.5rem;
+        display: block;
+    }
+    .form {
+        .form-group {
+            margin-bottom: 1rem;
+            .label {
+                display: block;
+                margin-bottom: .5rem;
+                font-size: 14px;
+                font-weight: bold;
+                color: #666;
+            }
+            input {
+                height: 50px;
+                width: 100%;
+                border-radius: 5px;
+                border: 1px solid #ddd;
+                padding: .5rem .9rem;
+                font-size: 12px;
+                &:focus {
+                    border-color: #077386;
+                    box-shadow: none;
+
+                }
+            }
+        }
+        .butn {
+            width: 150px;
+            height: 50px;
+            border-radius: 25px;
+            font-weight: bold;
+            border: 1px solid #077386;
+            background-color: #077386;
+            color: #fff;
+            display: block;
+            margin-top: 25px;
+            text-transform: capitalize;
+            cursor: pointer;
+        }
+
+    }
+}
+
+.toDoBox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    width: 50%;
+    flex-wrap: wrap;
+    .toDo_item {
+        background-color: #fff;
+        width: calc((100% / 2) - 2rem);
+        padding: 30px 2vw;
+        border-radius: 25px;
+        margin-bottom: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-between;
+        .toDoTitle {
+            font-size: 20px;
+            font-weight: bold;
+            text-transform: capitalize;
+        }
+        .del_butn {
+            padding: .5rem 1rem;
+            background-color: rgb(219, 58, 58);
+            border: 1px solid rgb(219, 58, 58);
+            border-radius: 25px;
+            cursor: pointer;
+            color: #fff;
+        }
+    }
+}
