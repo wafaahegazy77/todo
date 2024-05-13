@@ -7,7 +7,6 @@ function App() {
         <>
             <div className="container">
                 <ToDOListContainer/>
-
             </div>
         </>
     )
